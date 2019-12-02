@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <%- include partials/head.ejs %>
+  <body>
+    <div id="main">
+      <div class="overlay"></div>
+      <div class="container" id="varaos-list">
+        <% varaos.forEach(function(varao){ %>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="title-container">
+              <h1><%= varao.title %></h1>
+            </div>
+          </div>
+           <div class="col-md-4">
+            <div class="location-container">
+              <h4><%= varao.location %></h4>
+            </div>
+          </div>
+           <div class="col-md-2">
+            <div class="button-container">
+              <a  href="http://localhost:3000/varao/<%= varao._id %>"> <button  class="btn btn-primary">Buscar</button></a>
+            </div>
+          </div>
+        </div>
+        <% }) %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

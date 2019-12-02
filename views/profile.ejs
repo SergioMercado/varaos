@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <%- include partials/head.ejs %>
+  <body>
+    <div id="main">
+      <div class="container cuerpo">
+        <div class="tituloProf"><h1>Detalles del Ofertante</h1></div>
+        <div class="container prof">
+          <div class="row">
+            <div class="col-sm-2 containerprof">
+              <img
+                class=" img-fluid img-thumbnail photo"
+                alt="Profile photo"
+                src="./src/img/maicolvergara.jpg"
+                alt="John"
+              />
+            </div>
+            <div class="col-sm-8">
+              <div class="bodyprof">
+                <h3 ><%= varao.title %></h3>
+                <p>
+                  
+                  <h3 class="title"><%= varao.name %></h3>
+                  <b>categoria:</b> <%= varao.category %><br />
+                  
+                  <b>e-mail:</b><%= varao.email %><br />
+                  <b>Tel:</b><%= varao.phone %><br />
+                  <i class="fas fa-map-marker-alt"></i> <%= varao.location %>
+                  <br />
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-warning btnprof">
+                <i class="far fa-thumbs-up"> </i>
+                Conctacto
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

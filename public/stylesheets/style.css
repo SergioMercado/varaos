@@ -1,0 +1,175 @@
+body {
+  padding: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  position: relative;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.form-group {
+  margin: 0 !important;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url("../images/main-background.jpg");
+  overflow: hidden;
+}
+
+.background-img {
+  position: absoulte;
+  width: 100%;
+  height: 100%;
+}
+
+#header {
+  height: 100%;
+}
+
+#header > div {
+  height: 100%;
+}
+
+#header > div > div {
+  padding-top: 30%;
+}
+
+.overlay {
+  content: "";
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #282c32;
+  opacity: 0.64;
+}
+
+.search-div {
+  background: rgba(178, 184, 194, 0.6);
+  border-radius: 6.5px;
+  padding: 1em;
+}
+
+.main-input {
+  border-radius: 0px;
+}
+
+#varaos-list > .row {
+  background-color: white;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../src/img/reunion-eficiente.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  max-height: 1800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.prof {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 1800px;
+  margin: auto;
+  border-radius: 15px;
+  border-bottom-color: green;
+}
+
+.containerprof {
+  width: 200px;
+  height: 200px;
+}
+
+.tituloProf {
+  color: white;
+  align-items: center;
+}
+
+.bodyprof {
+  margin-top: 1.5rem;
+}
+
+.photo {
+  width: 200px;
+  height: 150px;
+  align-self: center;
+  margin-top: 1.5rem;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  /* color: grey;*/
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btnprof {
+  margin-top: 5rem;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+.cuerpo {
+  background-color: transparent;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.title {
+}

@@ -1,0 +1,55 @@
+<section id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col align-self-center">
+        <div class="search-div">
+          <form action="/varaos" method="post">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="keyword"
+                    class="form-control main-input"
+                    placeholder="Palabra Clave"
+                  />
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <select
+                    type=""
+                    class="form-control main-input"
+                    name="category"
+                  >
+                    <option value="" disabled selected>Elegir Categoría</option>
+                    <% categorias.forEach(function(category){ %>
+                    <option><%= category %></option>
+                    <% }) %>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <select
+                    type="select"
+                    class="form-control main-input"
+                    name="location"
+                  >
+                    <option value="" disabled selected>Elegir Ciudad</option>
+                    <% locations.forEach(function(location){ %>
+                    <option><%= location %></option>
+                    <% }) %>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <button type="submit" class="btn btn-primary">Buscar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
