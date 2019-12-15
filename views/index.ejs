@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
-  <%- include partials/head.ejs %>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%-title%></title>
+    <%- include('partials/header.ejs') %>
+  </head>
+
   <body>
-    <div id="main">
-      <div class="overlay"></div>
-      <%- include partials/dashboard.ejs %>
+    <%- include('partials/navigation.ejs') %>
+    <div class="container ">
+      <div class="row ">
+        <img src="images/bg1.jpg" class="rounded" alt="" />
+      </div>
+
+      <div class="row ">
+        <div class="col-md-6">
+          <div class="img-izq">
+            <img
+              src="images/varaos-text.jpg"
+              class="rounded"
+              width="570"
+              height="570"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="col-md-6  pure-body rounded">
+          <div class="pure-table">
+            <%-include('partials/table.ejs') %> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Vel deleniti minima, vero repudiandae
+            adipisci reiciendis itaque veniam, quas tempora, inventore nobis.
+            Necessitatibus ex, consectetur architecto labore perspiciatis earum
+            placeat odio. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Asperiores ipsum maxime voluptatibus amet, eius minus unde
+            eligendi enim maiores reprehenderit facilis repellendus quam.
+            Recusandae nihil beatae qui consequuntur, soluta deserunt.
+          </div>
+          1
+        </div>
+      </div>
     </div>
+    <%-include('partials/footer.ejs') %>
   </body>
 </html>

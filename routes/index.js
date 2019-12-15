@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const varaosControlles = require("../controller/varao");
+const usuarioControlles = require("../controller/usuario");
 
 /* GET home page. */
 router.get("/", async function(req, res, next) {
@@ -38,4 +39,13 @@ router.post("/varaos", async function(req, res, next) {
   res.render("listVaraos", { title: "Vara'os - Buscando", varaos });
 });
 
+router.get("/", (req, res) => {
+  res.render("index.ejs", { title: "Varao's Home" });
+});
+
+router.get("/contact", (req, res) => {
+  res.render("contact.ejs", { title: "Conctact Page" });
+});
+
+router.post("/crear-usuario", usuarioControlles.agregarUsuario);
 module.exports = router;
